@@ -69,7 +69,7 @@ public class Coche {
 			resultado += metodoB(modelo, fabricante);
 			break;
 		case"Híbrido":
-			resultado += metodoc(modelo, fabricante);
+			resultado += metodoC(modelo, fabricante);
 			break;
 		
 		default:
@@ -77,10 +77,8 @@ public class Coche {
 			
 			break;
 		}
-		
-		
-		
-		
+		return resultado;
+			
 		/*
 		if (atrib == "Gasolina") {
 			resultado += "El coche con matricula " + matricula + " ";
@@ -98,4 +96,20 @@ public class Coche {
 		
 		return resultado;
 	}*/
+}
+
+	private String metodoC(String modelo, String fabricante) {
+		String resultado ="es un" + fabricante + " "+ modelo+ " y no necesita combustible";
+		return resultado;
+	}
+
+	private String metodoB(String modelo, String fabricante) {
+		String resultado ="es un " + fabricante + " "+ modelo+ " y gasta 1,052 euros por litros";
+		return resultado;
+	}
+
+	private String metodoA(String modelo, String fabricante) {
+		String resultado ="es un " + fabricante + " "+ modelo+ " y gasta 1,337 euros por litros";
+		return resultado;
+	}
 }
