@@ -25,7 +25,7 @@ public class Coche {
 	public String metodo1() {
 		String resultado = "";
 		//Se repite resultado y la matricula en todos los if, es decir duplicidad de codigo
-		//Caso con switch?
+		//Caso con switch? 
 		if (atrib == "Gasolina") {
 			resultado += "El coche con matricula " + matricula + " ";
 			resultado += metodoA(modelo, fabricante);
